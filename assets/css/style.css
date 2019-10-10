@@ -202,11 +202,41 @@ p {
 
   /* section customers */
   #customers {
-    width: 100%;
+    /* width: 100%; */
     background: #f3f5f9;
   }
 
-    #customers div{
+  #customers div ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #customers div ul li {
+    width: calc(100% / 6);
+  }
+
+  #customers div ul li img {
+    max-width: 80%;
+  }
+
+  @media all and (max-width: 768px) {
+
+    #customers div ul li {
+      width: 50%;
+    }
+  }
+
+  @media all and (min-width: 768px) and (max-width: 992px) {
+    #customers div ul li {
+      width: calc(100% / 3);
+    }
+  }
+
+
+
+    /* #customers div{
       padding: 40px;
     }
 
@@ -218,7 +248,7 @@ p {
         #customers div ul li img {
           max-width: 80%;
           height: auto;
-        }
+        } */
 
 
   /* section deploy */
